@@ -319,3 +319,9 @@ ymaps[class$="map"]:first-child:not(:last-child) {
   color: #213679;
   font-weight: 600;
 }
+
+
+.table {
+  padding: 30px;
+}
+
