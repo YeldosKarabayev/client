@@ -12,13 +12,13 @@ const Public = () => {
             <PublicHeader />
             <div className='full__content'>
               <div className='left__dashboard'>
-                <p className='public_title'>Добро пожалывать на сайт карты Операторов связи города Шымкент!</p>
+                <p className='public_title'>Добро пожаловать на сайт карты Операторов связи города Шымкент!</p>
                 <h2 className='public_title_second'>Для того чтобы получить информацию сайта необходимо авторизоваться!</h2>
                 <Link
                     to={"/login"}
                 >
                     <button className='public__button'>
-                        Перейдти на на страницу
+                        Перейдти на страницу
                     </button>
                 </Link>
               </div>

@@ -24,6 +24,7 @@ code {
 
 ymaps[class$="map"]:first-child:not(:last-child) {
   display: none;
+  background: '#000', 
 }
 
 .container {
@@ -38,7 +39,7 @@ ymaps[class$="map"]:first-child:not(:last-child) {
   width: 100%;
   height: 38px;
   align-items: center;
-  background-color: #7D8AB7;
+  background-color: #275568;
   box-shadow: 2px 2px 3px 3px #dbd7d7;
 }
 
@@ -57,28 +58,29 @@ ymaps[class$="map"]:first-child:not(:last-child) {
 .left__dashboard{
   padding: 20px;
   width: 47%;
-  height: 100%;
+  height: 90%;
   background-color: #fff;
   border-radius: 20px;
+  margin-bottom: 30px;
 }
 
 .public_title {
   font-size: 40px;
   font-weight: 600;
-  color: #7D8AB7;
+  color: #275568;
 }
 
 .public_title_second {
   font-size:large;
   font-weight: 500;
-  color: #7D8AB7;
+  color: #275568;
 }
 
 .public__button {
   width: 40%;
   height: 60px;
   border-radius: 10px;
-  background-color: #7D8AB7;
+  background-color: #275568;
   font-size: 20px;
   font-weight: 600;
   color: #fff;
@@ -99,10 +101,10 @@ ymaps[class$="map"]:first-child:not(:last-child) {
 .right__dashboard {
   padding: 20px;
   width: 47%;
-  height: 100%;
+  height: 90%;
   background-color: #fff;
   border-radius: 20px;
-
+  margin-bottom: 50px;
 }
 
 .header__public {
@@ -110,7 +112,7 @@ ymaps[class$="map"]:first-child:not(:last-child) {
   width: 100%;
   height: 38px;
   align-items: center;
-  background-color: #7D8AB7;
+  background-color: #275568;
   box-shadow: 2px 2px 3px 3px #dbd7d7;
 }
 
@@ -130,7 +132,7 @@ ymaps[class$="map"]:first-child:not(:last-child) {
   width: 40%;
   height: 60px;
   border-radius: 10px;
-  background-color: #7D8AB7;
+  background-color: #275568;
   font-size: 16px;
   font-weight: 600;
   color: #fff;
@@ -160,7 +162,7 @@ ymaps[class$="map"]:first-child:not(:last-child) {
   border-radius: 8px;
   font-size: 16px;
   font-weight: 500;
-  background-color: #D57E77;
+  background-color: #eb5449;
   border: none;
   color: #fff;
 }
@@ -173,12 +175,12 @@ ymaps[class$="map"]:first-child:not(:last-child) {
 
 .map-block {
   width: 100%;
-  height: 615px;
+  height: 642px;
 }
 
 @media (min-width: 1563px) {
   .map-block {
-    height: 830px;
+    height: 858px;
     width: 100%;
   }
 }
@@ -186,15 +188,61 @@ ymaps[class$="map"]:first-child:not(:last-child) {
 .filter-container{
   display: grid;
   position: absolute;
-  border-radius: 7px;
+  border-radius: 10px;
+  color: #275568;
+  font-weight: 500;
   top: 50px;
   left: 50px;
-  background-color: #fff;
-  box-shadow: 2px 2px 3px 3px #dbd7d7;
-  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 12px 1px #6e909e;
   z-index: 100;
-  height: 300px;
+  height: fit-content;
+  width: 250px;
+  
 }
+
+.filter_top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+  align-items: center;
+  padding: 2rm;
+  background-color: #275568;
+  height: 70px;
+  color: #fff;
+  margin-bottom: 120px;
+}
+
+.dropdown-menu {
+  position: relative;
+  display: grid;
+  width: 250px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.7rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.9s ease-in-out;
+}
+
+.dropdown-menu.open {
+  max-height: fit-content;
+}
+
+.dropdown_button {
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.7rem;
+  border-radius: 10px;
+  background-color: #275568;
+  border-color: #275568;
+  font-size: 16px;
+  color: #fff;
+}
+
 
 
 .full {
@@ -277,7 +325,7 @@ ymaps[class$="map"]:first-child:not(:last-child) {
   border-radius: 5px;
   border: none;
   padding: 5px 15px;
-  background-color: #7D8AB7;
+  background-color: #275568;
   color: #fff;
   font-size: 18px;
 }
@@ -287,7 +335,7 @@ ymaps[class$="map"]:first-child:not(:last-child) {
   font-size: 1rem;
   color: #fff;
   border-radius: 5px;
-  background-color: #093ce5;
+  background-color: #275568;
   font-weight: 600;
   border: none;
   cursor: pointer;
@@ -301,7 +349,7 @@ ymaps[class$="map"]:first-child:not(:last-child) {
   font-size: 1rem;
   color: #fff;
   border-radius: 5px;
-  background-color: #093ce5;
+  background-color: #275568;
   font-weight: 600;
   border: none;
   cursor: pointer;
@@ -325,3 +373,60 @@ ymaps[class$="map"]:first-child:not(:last-child) {
   padding: 30px;
 }
 
+
+
+.App {
+  text-align: center;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  height: 100vh;
+}
+
+@media print {
+  .page {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0;
+    padding: 0;
+    height: auto;
+  }
+}
+
+
+.price-tag {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: calc(100% - 20px);
+  height: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  margin-top: auto;
+}

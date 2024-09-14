@@ -1,5 +1,6 @@
 import { useState, useEffect, useContext, useRef } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import ClipLoader from 'react-spinners/ClipLoader'
 import { useDispatch } from 'react-redux';
 import { setCredentials } from './authSlice';
 import { useLoginMutation } from './authApiSlice';
@@ -21,6 +22,8 @@ const Auth = () => {
   const dispatch = useDispatch()
 
   const [login, { isLoading}] = useLoginMutation()
+
+  //let [loading, setLoaging] = useState(true);
 
   // useEffect(() => {
   //   userRef.current.focus()
@@ -58,7 +61,14 @@ const Auth = () => {
 
   const errClass = errMsg ? "errmsg" : "offscreen"
 
-  if(isLoading) return <p>Загрузка...</p>
+  if(isLoading) return 
+    //<p>Загрузка...</p>
+    <ClipLoader 
+      loading={isLoading}
+      size={150}
+      aria-label='Loading Spinner'
+      data-testid="loader"  
+    />
 
   
 

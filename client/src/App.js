@@ -13,6 +13,7 @@ import Prefetch from './features/auth/Prefetch';
 import PersistLogin from './features/auth/PersistLogin';
 
 
+
 const App = () => {
 
   return (
@@ -29,7 +30,7 @@ const App = () => {
                   <Route path='map' element={<MapComponent />} />
                   <Route path='users'>
                     <Route index element={<UsersList />} />
-                    <Route path=':id' element={<EditUser />} />
+                    
                     <Route path='new' element={<NewUserForm />} />
                   </Route>
                 </Route> {/* End Dash */}
